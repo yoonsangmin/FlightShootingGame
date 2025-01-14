@@ -86,6 +86,7 @@ void Engine::Run()
 	LARGE_INTEGER time;
 	QueryPerformanceCounter(&time);
 	int64_t currentTime = time.QuadPart;
+	//previousTime = currentTime으로 설정하면 첫 프레임에 Update가 스킵됨.
 	int64_t previousTime = currentTime;
 
 	// 프레임 제한.
