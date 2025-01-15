@@ -95,6 +95,8 @@
       <AdditionalIncludeDirectories>$(ProjectDir)\;$(ProjectDir)\PreCompiledHeader\;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PreCompiledHeader.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +122,8 @@ xcopy $(OutDir)\*.lib $(SolutionDir)\Lib\ /e /y</Command>
       <AdditionalIncludeDirectories>$(ProjectDir)\;$(ProjectDir)\PreCompiledHeader\;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PreCompiledHeader.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -145,6 +149,8 @@ xcopy $(OutDir)\*.lib $(SolutionDir)\Lib\ /e /y</Command>
       <AdditionalIncludeDirectories>$(ProjectDir)\;$(ProjectDir)\PreCompiledHeader\;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PreCompiledHeader.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -170,6 +176,8 @@ xcopy $(OutDir)\*.lib $(SolutionDir)\Lib\ /e /y</Command>
       <AdditionalIncludeDirectories>$(ProjectDir)\;$(ProjectDir)\PreCompiledHeader\;</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PreCompiledHeader.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

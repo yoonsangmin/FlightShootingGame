@@ -4,10 +4,41 @@
 #pragma warning (disable : 4172)
 
 #include <iostream>
+#include <windows.h>
 
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>
 #include <crtdbg.h>
+
+// 색상 열거형.
+//namespace Color
+//{
+//    // 일반 열거형 - 암묵적 형변환 가능.
+//    enum
+//    {
+//        Red = FOREGROUND_RED,
+//        Green = FOREGROUND_GREEN,
+//        Blue = FOREGROUND_BLUE,
+//        White = Red + Green + Blue
+//    };
+//}
+// 암묵적 형변환 방지.
+enum class Color : unsigned short
+{
+    Red = FOREGROUND_RED,
+    Green = FOREGROUND_GREEN,
+    Blue = FOREGROUND_BLUE,
+    White = Red + Green + Blue
+};
+
+// 콘솔 색상 설정 함수.
+inline void SetColor(Color color)
+{
+    SetConsoleTextAttribute(
+        GetStdHandle(STD_OUTPUT_HANDLE),
+        (int)color
+    );
+}
 
 // 메모리 삭제 함수.
 template<typename T>
@@ -42,6 +73,12 @@ inline float RandomPercent(float min, float max)
 {
     float random = (float)(rand() / (float)RAND_MAX);
     return random * (max - min) + min;
+}
+
+// 메모리 누수 확인할 때 사용하는 함수.
+inline void CheckMemoryLeak()
+{
+    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 }
 
 // 디버깅 용도.

@@ -93,6 +93,8 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)\;$(SolutionDir)\Includes\</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -113,6 +115,8 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)\;$(SolutionDir)\Includes\</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,6 +137,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)\;$(SolutionDir)\Includes\</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -153,6 +159,8 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir)\;$(SolutionDir)\Includes\</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -168,6 +176,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Actor\Enemy.cpp" />
+    <ClCompile Include="Actor\EnemyBullet.cpp" />
     <ClCompile Include="Actor\Player.cpp" />
     <ClCompile Include="Actor\PlayerBullet.cpp" />
     <ClCompile Include="Game\Game.cpp" />
@@ -176,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Actor\Enemy.h" />
+    <ClInclude Include="Actor\EnemyBullet.h" />
     <ClInclude Include="Actor\Player.h" />
     <ClInclude Include="Actor\PlayerBullet.h" />
     <ClInclude Include="Game\Game.h" />
